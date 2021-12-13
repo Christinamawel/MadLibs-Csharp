@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <title>Taco Madlib</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+  <link rel="stylesheet" href="styles.css">
+  <style>
+	body {
+  background-color: gray;
+	color:white;
+	font-weight:normal;
+  text-align: center;
+	}
+  .container {
+    background-color: rgb(14, 51, 110);
+    padding: 1em;
+    margin-top: 1em;
+    border-radius: 1em;
+  }
+  h1 {
+    margin-bottom: 1em;
+    color: rgb(240, 182, 161);
+  }
+  button {
+    padding: .5em 1em;
+    border: none;
+    border-radius: .5em;
+    color: rgb(14, 51, 110);
+    margin-top: 1em;
+  }
+  button:hover {
+    cursor: pointer;
+    color: rgb(240, 182, 161);
+    background-color: gray;
+  }
+  </style>
+  </head>
+  <body>
+    <div class="container">
+    <h1>Fill out this form to see a goofy madlib story!</h1>
+    <form action="/MadLib" method="post">
+      <div><label for="adj">Adjective</label>
+      <input id="adj" name="adj" type="text"></div>
+      <div><label for="nounOne">Noun</label>
+      <input id="nounOne" name="nounOne" type="text"></div>
+      <div><label for="transp">A Transportation Vehicle</label>
+      <input id="transp" name="transp" type="text"></div>
+      <div><label for="verb">Verb</label>
+      <input id="verb" name="verb" type="text"></div>
+      <div><label for="color">Color</label>
+      <input id="color" name="color" type="text"></div>
+      <div><label for="nounTwo">Noun</label>
+      <input id="nounTwo" name="nounTwo" type="text"></div>
+      <div><label for="foodOne">A type of food(plural)</label>
+      <input id="foodOne" name="foodOne" type="text"></div>
+      <div><label for="foodTwo">A type of food(plural)</label>
+      <input id="foodTwo" name="foodTwo" type="text"></div>
+      <div><label for="person">A Person's name</label>
+      <input id="person" name="person" type="text"></div>
+      <div><label for="saying">A saying</label>
+      <input id="saying" name="saying" type="text"></div>
+      <button type="submit">See MadLib</button>
+    </form>
+    </div>
+  </body>
+</html>
